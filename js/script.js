@@ -21,17 +21,17 @@ bt_submitE.addEventListener("click", function () {
     info_formE.textContent="";
 
     const km = parseInt(KmE.value);
-    const age = parseInt(ageE.value);
+    const age = ageE.value;
     // calcola prezzo base
     let prezzo = km * 0.21;
     // testo che viene aggiunto nel caso in cui viene applicato uno sconto
     let textSconto = "";
-    if (age < 18) {
+    if (age === "minorenne") {
       const sconto = 20;
       // calcolo lo sconto tovando direttamente 80% del prezzo e arrotondo i decimali
       prezzo = ((prezzo * (100 - sconto)) / 100).toFixed(2);
       textSconto = "scontato del " + sconto + "% ";
-    } else if (age >= 65) {
+    } else if (age === "over_65") {
       const sconto = 40;
       prezzo = ((prezzo * (100 - sconto)) / 100).toFixed(2);
       textSconto = "scontato del " + sconto + "% ";
