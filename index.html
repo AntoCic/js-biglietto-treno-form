@@ -18,7 +18,7 @@
     </header>
 
     <main>
-        <section class="form-user-data p-3">
+        <section class="form-user-data p-3 text-center">
             <div class="container">
                 <div class="row bg-white rounded justify-content-center p-3">
                     <div class="col-4">
@@ -26,18 +26,21 @@
                         <input type="text" id="name_surname" class="form-control">
                     </div>
                     <div class="col-4">
-                        <label for="Km" class="form-label">Km da percorrere</label>
-                        <input type="text" id="Km" class="form-control">
+                        <label for="km" class="form-label">Km da percorrere</label>
+                        <input type="number" id="km" class="form-control">
                     </div>
                     <div class="col-4">
                         <label for="age" class="form-label">Fascia d'età</label>
-                        <input type="text" id="age" class="form-control">
+                        <input type="number" id="age" class="form-control">
+                    </div>
+                    <div class="col-12 ">
+                        <p class="text-danger" id="info_form"></p>
                     </div>
                     <div class="col-auto mt-4">
-                        <button type="submit" class="btn btn-outline-primary" >Genera</button>
+                        <button type="submit" id="bt_submit" class="btn btn-outline-primary" >Genera</button>
                     </div>
                     <div class="col-auto mt-4">
-                        <button type="reset" class="btn btn-outline-primary" >Annulla</button>
+                        <button type="reset" id="bt_reset" class="btn btn-outline-primary" >Annulla</button>
                     </div>
                 </div>
             </div>
@@ -49,7 +52,7 @@
             <div class="container">
                 <h2 class="h1 text-white text-center"> IL TUO BIGLIETTO</h2>
                 <div class="row bg-white justify-content-center p-3">
-                    <div class="col" id="tiket">
+                    <div class="col" id="tiket_container">
                       
                     </div>
                 </div>
