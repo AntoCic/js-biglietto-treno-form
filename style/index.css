@@ -40,7 +40,9 @@ body {
 /* HEADER */
 
 /* MAIN */
-
+th:first-child{
+  background-color: var(--bs-secondary);
+}
 /* FOOTER */
 
 /*************************************************

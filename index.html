@@ -35,16 +35,16 @@
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="minorenne">Minorenne</option>
                             <option value="over_65">Over 65</option>
-                          </select>
+                        </select>
                     </div>
                     <div class="col-12 ">
                         <p class="text-danger" id="info_form"></p>
                     </div>
                     <div class="col-auto mt-4">
-                        <button type="submit" id="bt_submit" class="btn btn-outline-primary" >Genera</button>
+                        <button type="submit" id="bt_submit" class="btn btn-outline-primary">Genera</button>
                     </div>
                     <div class="col-auto mt-4">
-                        <button type="reset" id="bt_reset" class="btn btn-outline-primary" >Annulla</button>
+                        <button type="reset" id="bt_reset" class="btn btn-outline-primary">Annulla</button>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,21 @@
             <div class="container">
                 <h2 class="h1 text-white text-center"> IL TUO BIGLIETTO</h2>
                 <div class="row bg-white justify-content-center p-3">
-                    <div class="col" id="tiket_container">
-                      
+                    <div class="col">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                  <th>NOME PASSEGGERO</th>
+                                  <th>Offerta</th>
+                                  <th>Carrozza</th>
+                                  <th>Codice CP</th>
+                                  <th>Costo biglietto</th>
+                                </tr>
+                              </thead>
+                              <tbody id="tiket_tbody">
+                                
+                              </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
